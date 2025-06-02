@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>成發本打不下了</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fcdff1, #cbe9f7);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .card {
+      background: white;
+      padding: 2em;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .icon {
+      width: 100px;
+      margin-bottom: 0.5em;
+    }
+
+    h2 {
+      margin-bottom: 1em;
+      color: #333;
+    }
+
+    input {
+      padding: 0.8em;
+      width: 100%;
+      max-width: 300px;
+      font-size: 1.1em;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+      margin-bottom: 1em;
+    }
+
+    button {
+      padding: 0.8em 1.5em;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 10px;
+      background-color: #4f8ef7;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #366fd3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="星星插圖" class="icon">
+    <h2>一個小驚喜~~~</h2>
+    <input type="text" id="nameInput" placeholder="輸入名字(看我平常怎麼叫你)" />
+    <br />
+    <button onclick="showText()">送出</button>
+  </div>
+
+  <script>
+    function showText() {
+      const name = document.getElementById("nameInput").value.trim().toLowerCase();
+      const nameToUrl = {
+        "jolie": "jolie.html",
+        "甘子恩": "甘子恩.html",
+        "黃品涵": "黃品涵.html",
+	"周宸妤": "周宸妤.html",
+	"黃薇倫": "黃薇倫.html",
+	"李子寧": "李子寧.html",
+	"簡禾溱": "簡禾溱.html",
+	"陳思妍": "陳思妍.html",
+	"王宥淇": "王宥淇.html",
+	"陳宥喬": "陳宥喬.html",
+	"彭新柔": "彭新柔.html",
+	"吳思嫺": "吳思嫺.html",
+	"陳安楹": "陳安楹.html",
+	"吳其樺": "吳其樺.html",
+	"翁水母": "翁水母.html",
+	"陳貝絲": "陳貝絲.html",
+	"王欣薇": "王欣薇.html",
+	"許子容": "許子容.html",
+	"葉小波": "葉小波.html",
+      };
+
+      if (nameToUrl[name]) {
+        window.location.href = nameToUrl[name];
+      } else {
+        alert("張丹齡會親自說給你聽");
+      }
+    }
+  </script>
+</body>
+</html>
+
